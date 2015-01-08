@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
+.container-main,.container-title,button{
+     font:12px/16px lucida sans unicode;
+    //font: 12px/16px open sans;
+    font-weight:300;
+}
+
+#cpanelMenus a{
+    float:left;
+    border:1px solid #ccc;
+    padding:20px;
+    width:75px;
+    height:75px;
+    margin:20px;
+    border-radius: 10px;
+    text-decoration: none;
+    background:#fff;
+}
+
+#cpanelMenus a:hover{
+      background-position: 0 center;
+    border-bottom-left-radius: 50% 20px;
+    box-shadow: -5px 10px 15px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 10;
+}
+
+form th{
+    text-align: left !important;
+}
+
+form td{
+    padding:10px;
+}
+.logoDiv{
+    text-align:center;
+    padding-top:10px;
+    box-shadow: 0 0 10px grey;
+    margin-bottom: 50px;
+    background: black;
+}
+
+.logoDiv img{
+    width:300px;
+    height:300px;
+    position:relative;
+    
+}
+
+label{
+    font-weight: bold;
+    text-shadow: 0 0 10px seagreen;
+}
+
+input[type='text']{
+    font-family: lucida sans unicode;
+    font-size: 12px !important;
+    
+}
+

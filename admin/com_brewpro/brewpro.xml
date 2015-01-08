@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<!-- The following elements are optional and free of formatting constraints -->
+	<name>com_brewpro</name>
+	<creationDate>29th December 2014</creationDate>
+	<author>N.Srinivasulu Rao</author>
+	<authorEmail>srinivasulu.rao@omkarsoft.com</authorEmail>
+	<authorUrl>http://github.com/srinivasulurao</authorUrl>
+	<copyright>Omkarsoft PVT LTD</copyright>
+	<license><![CDATA[ Ninja RSS Syndicator is free software; you can redistribute it and/or modify it under the terms of the <a href="http://www.gnu.org/licenses/gpl.html" target="_blank">General Public License</a> as published by the Free Software Foundation. ]]></license>
+
+	<!--  The version string is recorded in the components table -->
+	<version>3.0.0</version>
+	<!-- The description is optional and defaults to the name -->
+	<description>BrewPro-Brew Management System.</description>
+	
+	<installfile>install/install.php</installfile>
+        <uninstallfile>install/uninstall.php</uninstallfile>
+	
+	<!-- Site Main File Copy Section -->
+	<!-- Note the folder attribute: This attribute describes the folder
+		to copy FROM in the package to install therefore files copied
+		in this section are copied from /site/ in the package -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>brewpro.php</filename>
+		<filename>controller.php</filename>
+		<folder>assets</folder>
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+        
+	<administration>
+		<!-- Administration Menu Section -->
+		<menu img="../administrator/components/com_brewpro/assets/images/nficon.png" link="option=com_brewpro&amp;view=cpanel" alias="brewpro">BrewPro</menu>
+		<submenu>
+			<menu img="../administrator/templates/bluestork/images/menu/icon-16-component.png" alt="Cpanel" alias="Cpanel" view="cpanel" link="option=com_brewpro&amp;view=cpanel">Cpanel</menu>
+			<menu img="../administrator/templates/bluestork/images/menu/icon-16-component.png" alt="Brewers" alias="Brewers" view="feeds" link="option=com_brewpro&amp;view=brewers">Brewers Manager</menu>
+			<menu img="../administrator/templates/bluestork/images/menu/icon-16-component.png" alt="Brew" alias="Brews" view="buttonmaker" link="option=com_brewpro&amp;view=brews">Brew Manager</menu>
+			<menu img="../administrator/templates/bluestork/images/menu/icon-16-component.png" alt="Brew Fans" alias="Brew Fans" view="config" link="option=com_brewpro&amp;view=fans">Brew Fans Manager</menu>
+                        <menu img="../administrator/templates/bluestork/images/menu/icon-16-component.png" alt="Attribute Manager" alias="Attribute Manager" view="attributes" link="option=com_brewpro&amp;view=attributes">Attribute Manager</menu>
+                        <menu img="../administrator/templates/bluestork/images/menu/icon-16-component.png" alt="Settings" alias="Default Settings" view="settings" link="option=com_brewpro&amp;view=settings">BrewPro Settings</menu>
+
+		</submenu>
+		<!-- Administration Main File Copy Section -->
+		<!-- Note the folder attribute: This attribute describes the folder
+			to copy FROM in the package to install therefore files copied
+			in this section are copied from /admin/ in the package -->
+		<files folder="admin">
+			<!-- Admin Main File Copy Section -->
+			<filename>index.html</filename>
+			<filename>brewpro.php</filename>
+			<filename>controller.php</filename>
+			<!-- Assest files section -->
+			<folder>assets</folder>
+			<!--<folder>classes</folder>-->
+			<!-- SQL files section -->
+<!--			<folder>install</folder>-->
+			<!-- tables files section -->
+			<!-- models files section -->
+			<folder>models</folder>
+			<!-- views files section -->
+			<folder>views</folder>
+			<!-- controllers files section -->
+			<folder>controllers</folder>
+			<!-- helpers files section -->
+			<!--<folder>helpers</folder>-->
+		</files>
+		
+	</administration>
+</extension>
+
